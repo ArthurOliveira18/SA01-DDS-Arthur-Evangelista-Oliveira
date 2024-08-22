@@ -17,20 +17,27 @@ header {
    
 }
 
-
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    left: 10px;
+}
 
 
 .paginas ul li a {
     text-decoration: none;
     color: #fff;
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
     text-transform: uppercase;
     
 }
 
-a::before {
+.paginas ul li a::before {
     content: '';
     width: 0;
     height: 5px;
@@ -41,7 +48,7 @@ a::before {
     transition: width 0.7s ease;
 }
 
-a:hover::before {
+.paginas ul li a:hover::before {
     width: 100%;
 }
 
