@@ -85,7 +85,7 @@ header {
 
 #img3{
     background-color:rgb(16, 31, 98); 
-    height: 40vh;
+    height: 25rem;
     transition: transform 0.7s ease, background-color 0.7s ease;
 }
 
