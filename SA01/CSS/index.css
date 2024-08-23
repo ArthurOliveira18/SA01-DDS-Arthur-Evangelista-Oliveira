@@ -84,23 +84,28 @@ header {
 
 
 .mainImages img{
-    width: 48vw;
+    width: 33vw;
     
 }
 
-img{
-    border: 1px black solid;
-}
-
-#img3{
-    width: 100vw;
+.mainImages a p{
+    color: black;
+    text-decoration: none;
     display: flex;
     justify-content: center;
+
 }
-#img3 img {
-    width: 48vw;
-    height: auto;
-    
+
+.mainImages a{
+    text-decoration: none;
+}
+
+
+/* Estilização do conteudo do curso */
+
+.corse{
+    display: flex;
+    text-align: center;
 }
 
 
