@@ -78,13 +78,24 @@ header {
     display: flex;
     margin-top: 1rem;
     justify-content: center;
-    
+    gap: .50rem;
     flex-wrap: wrap;
 }
 
 
+#img3{
+    background-color:rgb(16, 31, 98); 
+    height: 40vh;
+    transition: transform 0.7s ease, background-color 0.7s ease;
+}
+
+#img3:hover{
+    background-color: rgb(79, 116, 116);
+    transform: scale(1.05) translateY(-5%);
+}
+
 .mainImages img{
-    width: 33vw;
+    width: 31vw;
     
 }
 
@@ -104,8 +115,31 @@ header {
 /* Estilização do conteudo do curso */
 
 .corse{
-    display: flex;
+    flex-direction: column;
     text-align: center;
+    color:#fff;
+    
+}
+#img3 a p {
+    color: #fff;
+}
+
+#img3 a p {
+    color: #fff;
+}
+
+#img3 a p {
+    color: #fff;
+}
+
+
+.local{
+    display: flex;
+    
+}
+
+.presencial{
+    display: flex;
 }
 
 
