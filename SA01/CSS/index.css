@@ -76,17 +76,31 @@ header {
 
 .mainImages{
     display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    
+    flex-wrap: wrap;
 }
 
 
 .mainImages img{
-    width: 50vw;
+    width: 48vw;
+    
 }
 
+img{
+    border: 1px black solid;
+}
+
+#img3{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 #img3 img {
-    width: 50vw;
+    width: 48vw;
     height: auto;
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorcer */
+    
 }
 
 
