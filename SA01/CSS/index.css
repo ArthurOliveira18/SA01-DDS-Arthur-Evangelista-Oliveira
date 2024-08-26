@@ -13,12 +13,10 @@ header {
     height: 12vh;
     display: flex;
     align-items: center;
-    
-   
 }
 
 /* Estilização da logo do "Senai" */
-.logo{
+.logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +33,6 @@ header {
     font-size: 17px;
     font-weight: 500;
     text-transform: uppercase;
-    
 }
 
 .paginas ul li a::before {
@@ -54,7 +51,7 @@ header {
 }
 
 /* Estilização das ul */
-.paginas{
+.paginas {
     width: 80%;
     justify-content: end;
     display: flex;
@@ -73,8 +70,7 @@ header {
 }
 
 /* Estilização das imagens */
-
-.mainImages{
+.mainImages {
     display: flex;
     margin-top: 1rem;
     justify-content: center;
@@ -82,105 +78,62 @@ header {
     flex-wrap: wrap;
 }
 
-#img1 {
+#img1, #img2, #img3 {
     background-color: rgb(16, 31, 98); 
-    height: 25rem;
-    min-height: 40rem; /* ou qualquer valor que seja adequado */
     transition: transform 0.7s ease, background-color 0.7s ease;
+    width: 31vw; /* A largura padrão para os contêineres */
+    height: 35rem;
+    max-height: 38rem;
 }
 
-#img2 {
-    display: flex;
-    background-color: rgb(16, 31, 98); 
-    height: 25rem;
-    min-height: 500px; /* ou qualquer valor que seja adequado */
-    transition: transform 0.7s ease, background-color 0.7s ease;
-}
-
-
-#img3 {
-    background-color: rgb(16, 31, 98); 
-    height: 25rem;
-    min-height: 500px; /* ou qualquer valor que seja adequado */
-    transition: transform 0.7s ease, background-color 0.7s ease;
-}
-#img1:hover{
+#img1:hover, #img2:hover, #img3:hover {
     background-color: rgb(79, 116, 116);
     transform: scale(1.05) translateY(-5%);
 }
 
-
-.mainImages img{
-    width: 31vw;
-    
+.mainImages img {
+    width: 100%; /* A imagem vai ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-#img2:hover{
-    background-color: rgb(79, 116, 116);
-    transform: scale(1.05) translateY(-5%);
-}
-
-
-.mainImages img{
-    width: 31vw;
-    
-}
-
-
-
-#img3:hover{
-    background-color: rgb(79, 116, 116);
-    transform: scale(1.05) translateY(-5%);
-}
-
-
-.mainImages img{
-    width: 31vw;
-    
-}
-
-.mainImages a p{
+.mainImages a p {
     color: black;
     text-decoration: none;
     display: flex;
     justify-content: center;
-
 }
 
-.mainImages a{
+.mainImages a {
     text-decoration: none;
 }
 
-
 /* Estilização do conteudo do curso */
-
-.corse{
+.corse {
     flex-direction: column;
     text-align: center;
-    color:#fff;
-    
-}
-#img3 a p {
     color: #fff;
 }
 
-#img1 a p {
+#img3 a p, #img1 a p, #img2 a p {
     color: #fff;
 }
 
-#img2 a p {
-    color: #fff;
-}
-
-
-.local{
-    display: flex;
-    
-}
-
-.presencial{
+.local, .presencial {
     display: flex;
 }
 
 
+@media (max-width: 520px) {
+    .mainImages {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 
+   
+
+    #img1, #img2, #img3 {
+        width: 100%; 
+        height: 28rem; 
+    }
+}
