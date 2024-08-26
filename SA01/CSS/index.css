@@ -82,17 +82,57 @@ header {
     flex-wrap: wrap;
 }
 
-
-#img3{
-    background-color:rgb(16, 31, 98); 
+#img1 {
+    background-color: rgb(16, 31, 98); 
     height: 25rem;
+    min-height: 40rem; /* ou qualquer valor que seja adequado */
     transition: transform 0.7s ease, background-color 0.7s ease;
 }
+
+#img2 {
+    display: flex;
+    background-color: rgb(16, 31, 98); 
+    height: 25rem;
+    min-height: 500px; /* ou qualquer valor que seja adequado */
+    transition: transform 0.7s ease, background-color 0.7s ease;
+}
+
+
+#img3 {
+    background-color: rgb(16, 31, 98); 
+    height: 25rem;
+    min-height: 500px; /* ou qualquer valor que seja adequado */
+    transition: transform 0.7s ease, background-color 0.7s ease;
+}
+#img1:hover{
+    background-color: rgb(79, 116, 116);
+    transform: scale(1.05) translateY(-5%);
+}
+
+
+.mainImages img{
+    width: 31vw;
+    
+}
+
+#img2:hover{
+    background-color: rgb(79, 116, 116);
+    transform: scale(1.05) translateY(-5%);
+}
+
+
+.mainImages img{
+    width: 31vw;
+    
+}
+
+
 
 #img3:hover{
     background-color: rgb(79, 116, 116);
     transform: scale(1.05) translateY(-5%);
 }
+
 
 .mainImages img{
     width: 31vw;
@@ -124,11 +164,11 @@ header {
     color: #fff;
 }
 
-#img3 a p {
+#img1 a p {
     color: #fff;
 }
 
-#img3 a p {
+#img2 a p {
     color: #fff;
 }
 
