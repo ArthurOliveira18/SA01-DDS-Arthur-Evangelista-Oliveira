@@ -14,16 +14,12 @@ header {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    
+    min-height: 100vh; 
     margin: 0;
 }
 
 
-main {
-    flex-grow: 1; /* Faz o main crescer para ocupar o espaço disponível */
-}
 
 
 /* Estilização da logo do "Senai" */
@@ -92,20 +88,20 @@ main {
 #img1, #img2, #img3 {
     background-color: rgb(16, 31, 98); 
     transition: transform 0.7s ease, background-color 0.7s ease;
-    width: 31vw; /* A largura padrão para os contêineres */
+    width: 31vw; 
     height: 42rem;
-    
     position: relative;
 }
 
 #img1:hover, #img2:hover, #img3:hover {
     background-color: rgb(69,191, 214);
     transform: scale(1.05) translateY(-5%);
+    z-index: 1;
 }
 
 .mainImages img {
-    width: 100%; /* A imagem vai ocupar 100% da largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%; 
+    height: auto; 
 }
 
 .mainImages a p {
@@ -133,7 +129,7 @@ main {
 
 .local, .presencial, .tempo, .calendario {
     display: flex;
-    align-items: center; /* Adiciona alinhamento vertical */
+    align-items: center; 
 }
 
 
@@ -173,7 +169,7 @@ main {
 
 footer {
     margin-top: 2rem;
-    background-color: rgb(16, 31, 98); 
+    background-color: #045cac; 
     color: white; 
     text-align: center; 
     padding: 1rem 0;
