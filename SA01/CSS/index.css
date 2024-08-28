@@ -14,9 +14,14 @@ header {
 }
 
 body {
-    
-    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
     margin: 0;
+}
+
+main {
+    flex-grow: 1; /* Faz com que o main ocupe todo o espaço disponível entre o header e o footer */
 }
 
 
@@ -176,6 +181,8 @@ footer {
     height: 5rem;
     display: flex;
     flex-direction: column;
+    bottom: 0;
+    
 }
 
 
@@ -213,6 +220,12 @@ footer {
         gap: 2rem;
     }
 
+    .paginas ul li a {
+        
+        position: relative;
+        font-size: 15px;
+       
+    }
    
 
     #img1, #img2, #img3 {
