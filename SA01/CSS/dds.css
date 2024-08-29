@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: rgb(16, 31, 98);
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1; /* Faz com que o main ocupe todo o espaço disponível entre o header e o footer */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Estilização da logo do "Senai" */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    left: 10px;
+}
+
+/* Animação nas UL e LI com os links dentro */
+.paginas ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.paginas ul li a::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(243, 171, 21);
+    bottom: 0;
+    left: 0;
+    transition: width 0.7s ease;
+}
+
+.paginas ul li a:hover::before {
+    width: 100%;
+}
+
+/* Estilização das ul */
+.paginas {
+    width: 80%;
+    justify-content: end;
+    display: flex;
+}
+
+.paginas ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.paginas ul li {
+    list-style: none;
+    position: relative;
+}
+
+
+/* Estilização das informações sobre o curso */
+.curso{
+    width: 50vw;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #eeeeee;
+    height: 70vh;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgb(141, 141, 141);
+    font-size: 18px;
+}
+
+.curso img{
+    width: 70%;
+}
+
+.curso button{
+    border: none;
+    width: 60%;
+    background-color: #045cac;
+    height: 8%;
+    border-radius: 10rem;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.7s ease;
+}
+
+
+.curso button:hover{
+    background-color:rgb(16, 31, 98); 
+}
+
+
+
+
+
+
+
+
+/* Estiização do footer */
+
+footer {
+    margin-top: 2rem;
+    background-color: #045cac; 
+    color: white; 
+    text-align: center; 
+    padding: 1rem 0;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    
+}
+
+
+/* Estilização das logo do Senai e Findes footer */
+.logos{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+
+.logos p{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.rede-social a{
+    text-decoration: none;
+}
+
+.maneiraContato{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}

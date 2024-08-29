@@ -82,6 +82,8 @@ main {
     position: relative;
 }
 
+
+/* Estilização das informações sobre o curso */
 .curso{
     width: 50vw;
     display: flex;
@@ -109,6 +111,12 @@ main {
     border-radius: 10rem;
     color: #fff;
     font-size: 18px;
+    transition: background-color 0.7s ease;
+}
+
+
+.curso button:hover{
+    background-color:rgb(16, 31, 98); 
 }
 
 
