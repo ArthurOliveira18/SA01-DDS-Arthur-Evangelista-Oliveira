@@ -166,3 +166,10 @@ footer {
     text-align: center;
     align-items: center;
 }
+
+
+@media (max-width: 520px) {
+    .curso{
+        width: 80vw;
+    }
+}
