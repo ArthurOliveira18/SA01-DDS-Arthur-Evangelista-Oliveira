@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 body {
     display: flex;
@@ -95,7 +101,8 @@ header {
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 1);
+    font-family:  sans-serif;
     
 
 }
@@ -122,9 +129,13 @@ header {
     border-radius: 100rem;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:  sans-serif;
+    transition: background-color 0.7s ease;
 }
 
+.cadastro button:hover{
+    background-color: rgb(16, 31, 98);
+}
 
 
 footer {
