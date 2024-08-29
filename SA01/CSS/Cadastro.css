@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    
+    overflow-y: hidden;
 }
 
 main {
@@ -103,6 +103,9 @@ header {
     text-transform: uppercase;
     box-shadow: 0 4px 100px rgba(0, 0, 0, 1);
     font-family:  sans-serif;
+    border-radius: 1rem;
+    font-size: 18px;
+    padding-bottom:2rem ;
     
 
 }
@@ -117,7 +120,7 @@ header {
     width: 90%;
     height: 7%;
     border: none;
-    border-radius: .50rem;
+    border-radius: 2rem;
     
 }
 
@@ -132,6 +135,7 @@ header {
     text-transform: uppercase;
     font-family:  sans-serif;
     transition: background-color 0.7s ease;
+    font-size: 25px;
 }
 
 .cadastro button:hover{
