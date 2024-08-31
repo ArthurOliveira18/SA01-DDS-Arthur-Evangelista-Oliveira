@@ -101,6 +101,7 @@ main {
 
 .curso img{
     width: 70%;
+    border-radius: 2rem;
 }
 
 .curso button{
