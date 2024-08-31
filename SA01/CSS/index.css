@@ -17,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
-    margin: 0;
     overflow-x: hidden;
 }
 
