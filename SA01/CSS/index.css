@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
+
 
 header {
     background-color: rgb(16, 31, 98);
@@ -13,32 +11,46 @@ header {
     height: 12vh;
     display: flex;
     align-items: center;
-    
-   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1; /* Faz com que o main ocupe todo o espaço disponível entre o header e o footer */
 }
 
 
 
 
-.pagina ul li a {
-    
+/* Estilização da logo do "Senai" */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     position: relative;
-    
-    
+    left: 10px;
 }
-a{
+
+/* Animação nas UL e LI com os links dentro */
+.paginas ul li a {
     text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
+    color: #fff;
+    position: relative;
+    font-size: 17px;
     font-weight: 500;
     text-transform: uppercase;
-    color: aliceblue;
 }
 
-a::before {
+.paginas ul li a::before {
     content: '';
     width: 0;
-    height: 5px;
+    height: 3px;
     position: absolute;
     background-color: rgb(243, 171, 21);
     bottom: 0;
@@ -46,11 +58,12 @@ a::before {
     transition: width 0.7s ease;
 }
 
-a:hover::before {
+.paginas ul li a:hover::before {
     width: 100%;
 }
 
-.paginas{
+/* Estilização das ul */
+.paginas {
     width: 80%;
     justify-content: end;
     display: flex;
@@ -68,4 +81,155 @@ a:hover::before {
     position: relative;
 }
 
+/* Estilização das imagens */
+.mainImages {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    gap: .30rem;
+    flex-wrap: wrap;
+}
 
+#img1, #img2, #img3 {
+    background-color: rgb(16, 31, 98); 
+    transition: transform 0.7s ease, background-color 0.7s ease;
+    width: 31vw; 
+    height: 42rem;
+    position: relative;
+}
+
+#img1:hover, #img2:hover, #img3:hover {
+    background-color: rgb(69,191, 214);
+    transform: scale(1.05) translateY(-5%);
+    z-index: 1;
+}
+
+.mainImages img {
+    width: 100%; 
+    height: auto; 
+}
+
+.mainImages a p {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.mainImages a {
+    text-decoration: none;
+}
+
+/* Estilização do conteudo do curso */
+
+.corse {
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+#img3 a p, #img1 a p, #img2 a p {
+    color: #fff;
+}
+
+.local, .presencial, .tempo, .calendario {
+    display: flex;
+    align-items: center; 
+}
+
+
+/* Estilização dos botão */
+
+.compra{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    
+}
+
+.compra button{
+    background-color: rgb(32, 41, 173);
+    width: 90%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    border: none;
+}
+    
+
+
+.compra button:hover{
+    background-color: rgb(16, 31, 98);
+    transform: 5s ease;
+    color: #fff;
+}
+/* Estiização do footer */
+
+footer {
+    margin-top: 2rem;
+    background-color: #045cac; 
+    color: white; 
+    text-align: center; 
+    padding: 1rem 0;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    
+}
+
+
+/* Estilização das logo do Senai e Findes footer */
+.logos{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+
+.logos p{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.rede-social a{
+    text-decoration: none;
+}
+
+.maneiraContato{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 520px) {
+    .mainImages {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .paginas ul li a {
+        
+        position: relative;
+        font-size: 15px;
+       
+    }
+   
+
+    #img1, #img2, #img3 {
+        width: 100%; 
+        height: 38rem; 
+    }
+}

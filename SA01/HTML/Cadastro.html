@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Cadastro</title>
+    <link rel="stylesheet" href="../CSS/Cadastro.css">
+    
+    <title>Cadastro</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    
+    <header>
+        <div class="logo">
+          <a href="index.html">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Jd9pYD16Mveb7xcgwGsG_B_ul0sPH3W16w&s" alt="Logo do senai"
+              width="110">
+          </a>
+        </div>
+
+        <div class="paginas">
+          <ul>
+            <li><a href="Cadastro.html">Cadastro</a></li>
+            <li><a href="Historia.html">Nossa História</a></li>
+          </ul>
+        </div>
+    </header> 
+
+    <main>
+        <form action="">
+            <div class="cadastro">
+                <h1>Cadastro</h1>
+                <br><br>
+                <label for="name">Nome:</label>
+                <br>
+                <input type="text" name="name" id="name" required> <!-- Campo obrigatório -->
+                <br>
+                
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" id="email" required> <!-- Campo obrigatório -->
+                <br>
+
+                <label for="password">Senha:</label>
+                <br>
+                <input type="password" name="password" id="password" required> <!-- Campo obrigatório -->
+                <br>
+
+                <label for="confirm-password">Confirme sua senha:</label>
+                <br>
+                <input type="password" name="confirm-password" id="confirm-password" required> <!-- Campo obrigatório -->
+                <br><br><br><br>
+
+                <button type="submit">Entrar</button>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logos">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Jd9pYD16Mveb7xcgwGsG_B_ul0sPH3W16w&s" alt="Logo do senai" width="110">
+            <p>Entre em contato conosco!</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqL8yfKaSjHPtCAgDzhXrWuobVY3xptv-zBQ&s" alt="" width="110">
+        </div>
+        
+        <div class="maneiraContato">
+            <p>(27) 3334-5217</p>
+            <div class="rede-social">
+                <a href="https://www.instagram.com/senaies/" target="_blank">
+                  <img src="https://img.icons8.com/?size=512&id=44418&format=png" alt="" width="30">
+                </a>
+  
+                <a href="https://www.facebook.com/SenaiES/?locale=pt_BR">
+                  <img src="https://freepnglogo.com/images/all_img/1713419247Facebook-Logo-Black.png" alt="" width="30" >
+                </a>
+  
+                <a href="https://www.instagram.com/senaies/" target="_blank">
+                  <img src="https://cdn-icons-png.flaticon.com/256/25/25425.png" alt="" width="30">
+                </a>
+            </div>
+  
+            <p> 0800 102 0880</p>
+        </div>
+    </footer>
 </body>
 </html>
